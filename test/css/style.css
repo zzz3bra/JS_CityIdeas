@@ -1,0 +1,37 @@
+body
+{
+    background-color: lightgray;
+    font-family: sans-serif;
+}
+
+.wrap
+{
+    margin: auto;
+    width: 80%;
+    min-width: 600px;
+    background: green;
+}
+
+.content
+{
+    background: red;
+    float: left;
+    width: 80%;
+}
+aside
+{
+    background: brown;
+    float: left;
+    width: 20%;
+}
+
+aside ul
+{
+    list-style: none;
+    padding-left: 0;
+}
+
+footer
+{
+    clear: both;
+}
