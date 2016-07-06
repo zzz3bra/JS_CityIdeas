@@ -1,53 +1,72 @@
-.navbar
-{
+header img {
+    width: 100%;
+}
+
+.navbar {
     background: lightskyblue;
     line-height: 50px;
     font-family: sans-serif;
-    font-size: 8pt;
+    font-size: 8pt; 
+    overflow: hidden;
 }
 
-.navbar a
-{
-    color: white;
-    text-decoration: none;
-}
-.navbar a:hover
-{
-    text-decoration: underline;
-}
-.navbar .search
-{
-    display: inline;
-    color: gray;
-    margin-left: 10px;
-}
-.nav_links
-{
-    float: right;
-    line-height: 50px;
-}
-.nav_links li
-{
-    margin-left: 10px;
-    display: inline;
-    text-align: right;
-}   
-.map
-{
-    float: right;
-}
-
-.categories li
-{
-        display: inline;
-}
-
-.proposition
-{
+.navbar ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     display: inline-block;
 }
 
-header img 
-{
+.right_bar {
+    float:right;
+}
+
+.search {
+    display: inline;
+    color: gray;
+    overflow: hidden;
+    min-height: 50px;
+}
+.right_bar li {
+    margin-left: 10px;
+    float: right;
+    text-align: right;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.map {
+    width: 40%;
+    float: right;
+    min-width: 400px;
+}
+
+.map img {
     width: 100%;
+}
+
+.propositions {
+    display: inline-block;
+    width: 60%; 
+}
+
+.proposition_picture {
+    float: left;
+    margin: 10px 10px 10px 10px;
+}
+
+.proposition_info p {
+    display: inline-block;
+}
+
+.propositions td {
+    width: 30%;
+    min-width: 300px;
 }
