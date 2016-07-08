@@ -2,8 +2,21 @@
 
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Идейки для котейки</title>
     <link rel="stylesheet" href="css/idea.css" />
+
+    <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
 </head>
 
 <body>
@@ -37,120 +50,11 @@
 
         <div class="propositions">
             <table cellspading="0" cellpadding=0>
-                <tbody>
-                    <tr>
-                        <td>
-                            <div class=proposition>
-                                <div class="proposition_picture">
-                                    <img src="img/proposition.png">
-                                </div>
-                                <span class="proposition_header">
-                                    <p>
-                                        Заголовок предложения
-                                    </p>
-                                </span>
-                                <span class="proposition_text">
-                                    <p>Мост давно требует полной реконструкции</p>
-                                </span>
-                                <span class="proposition_info">
-                                    <span class="proposition_date">
-                                        <p>17.07.91</p>
-                                    </span>
-                                <span class="proposition_user">
-                                        <p>testUser</p>
-                                    </span>
-                                <span class="proposition_category">
-                                        <p>Транспорт</p>
-                                    </span>
-                                </span>
-                                <hr>
-                            </div>
-                        </td>
-                        <td>
-                            <div class=proposition>
-                                <div class="proposition_picture">
-                                    <img src="img/proposition.png">
-                                </div>
-                                <span class="proposition_header">
-                                    <p>
-                                        Заголовок предложения
-                                    </p>
-                                </span>
-                                <span class="proposition_text">
-                                    <p>Мост давно требует полной реконструкции</p>
-                                </span>
-                                <span class="proposition_info">
-                                    <span class="proposition_date">
-                                        <p>17.07.91</p>
-                                    </span>
-                                <span class="proposition_user">
-                                        <p>testUser</p>
-                                    </span>
-                                <span class="proposition_category">
-                                        <p>Транспорт</p>
-                                    </span>
-                                </span>
-                                <hr>
-                            </div>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class=proposition>
-                                <div class="proposition_picture">
-                                    <img src="img/proposition.png">
-                                </div>
-                                <span class="proposition_header">
-                                    <p>
-                                        Заголовок предложения
-                                    </p>
-                                </span>
-                                <span class="proposition_text">
-                                    <p>Мост давно требует полной реконструкции</p>
-                                </span>
-                                <span class="proposition_info">
-                                    <span class="proposition_date">
-                                        <p>17.07.91</p>
-                                    </span>
-                                <span class="proposition_user">
-                                        <p>testUser</p>
-                                    </span>
-                                <span class="proposition_category">
-                                        <p>Транспорт</p>
-                                    </span>
-                                </span>
-                                <hr>
-                            </div>
-                        </td>
-                        <td>
-                            <div class=proposition>
-                                <div class="proposition_picture">
-                                    <img src="img/proposition.png">
-                                </div>
-                                <span class="proposition_header">
-                                    <p>
-                                        Заголовок предложения
-                                    </p>
-                                </span>
-                                <span class="proposition_text">
-                                    <p>Мост давно требует полной реконструкции</p>
-                                </span>
-                                <span class="proposition_info">
-                                    <span class="proposition_date">
-                                        <p>17.07.91</p>
-                                    </span>
-                                <span class="proposition_user">
-                                        <p>testUser</p>
-                                    </span>
-                                <span class="proposition_category">
-                                        <p>Транспорт</p>
-                                    </span>
-                                </span>
-                                <hr>
-                            </div>
-                        </td>
-                    </tr>
-                </tbody>
+                <ul>
+                    <li>
+                        <app>Загрузка данных...</app>
+                    </li>
+                </ul>
             </table>
         </div>
         <div class="map">
