@@ -10,13 +10,6 @@ header img {
     overflow: hidden;
 }
 
-ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: inline-block;
-}
-
 .right_bar {
     float:right;
 }
@@ -41,11 +34,14 @@ ul {
 .navbar a:hover {
     text-decoration: underline;
 }
+.navbar ul{
+        list-style-type: none;
+}
 
 .map {
     width: 40%;
     float: right;
-    min-width: 400px;
+    min-width: 200px;
 }
 
 .map img {
@@ -54,20 +50,14 @@ ul {
 
 .propositions {
     display: inline-block;
-    width: 60%; 
+    width: 60%;
 }
 
-.proposition_picture {
-    float: left;
-    margin: 10px 10px 10px 10px;
-}
-
-.proposition_info p {
-    display: inline-block;
-}
-
-.propositions td {
-    width: 50%;
-    min-width: 300px;
+.propositions ul {
+    width: 100%;
+    columns: 2;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
     display: inline-block;
 }

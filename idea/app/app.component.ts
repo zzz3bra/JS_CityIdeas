@@ -2,17 +2,17 @@ import { Component } from '@angular/core';
 import { Idea } from './idea';
 import { IdeaCardComponent } from './idea-card.component';
 import { IDEAS} from './mock-ideas';
+import { FilterTextPipe} from './filter-text.pipe';
+
 @Component({
+    moduleId: module.id,
     selector: 'app',
-    template: `<table cellspading="0" cellpadding=0>
-    <tr>
-    <td *ngFor="let cur_idea of ideas">
-        <idea-card [idea]="cur_idea"></idea-card>
-    </td>
-    </tr>
-    </table>`,
+    templateUrl: 'app.component.html',
+    styleUrls: ['app.component.css'],
     directives: [IdeaCardComponent],
+    pipes: [FilterTextPipe]
 })
 export class AppComponent {
     ideas = IDEAS;
+    findText = '';
 }

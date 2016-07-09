@@ -1,0 +1,24 @@
+img.proposition_picture{
+    float: left;
+    margin: 5px 10px 5px 0px;
+}
+
+.proposition_content{
+    display: inline;
+}
+
+.proposition_info{
+    display: inline;    
+    position: absolute;
+    bottom: 0;
+}
+
+.proposition{
+    min-width: 330px;
+    height: fit-content;
+    width: fit-content;
+    overflow: hidden;
+    border-bottom: thin solid dimgray;
+    position: relative;
+    display:table-cell;
+}
