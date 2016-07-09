@@ -1,4 +1,5 @@
 .idea
+firebase-debug.log
 typings/**
 node_modules
 jspm_packages

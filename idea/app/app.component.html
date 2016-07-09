@@ -11,7 +11,7 @@
                     <a href="#" id="login">Войти</a>
                 </li>
                 <li>
-                    <a href="#" id="register">Реигистрация</a>
+                    <a href="#" id="register">Регистрация</a>
                 </li>
             </ul>
         </div>
@@ -19,16 +19,12 @@
 </header>
 
 <div class="categories">
-    <a href="#">Все</a>
-    <a href="#">Спорт</a>
-    <a href="#">Транспорт</a>
-    <a href="#">Культура</a>
-    <a href="#">Животные</a>
+    <button *ngFor="let category of categories" (click)="onSelect(category)">{{category}}</button>
 </div>
 
 <div class="propositions">
     <ul>
-        <li *ngFor="let cur_idea of (ideas | filterText: findText)">
+        <li *ngFor="let cur_idea of (ideas | filterCategory: selectedCategory |filterText: findText)">
             <idea-card [idea]="cur_idea"></idea-card>
         </li>
     </ul>
