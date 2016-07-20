@@ -3,7 +3,7 @@
     <div class="navbar">
         <span class="left_bar">
                     <a href="#" id="main">На главную</a>
-                    <input [(ngModel)]="findText" placeholder="Введите текст для поиска...">
+                        <input [(ngModel)]="findText" placeholder="Введите текст для поиска...">
                 </span>
         <div class="right_bar">
             <ul>
@@ -24,7 +24,7 @@
 
 <div class="propositions">
     <ul>
-        <li *ngFor="let cur_idea of (ideas | filterCategory: selectedCategory |filterText: findText)">
+        <li *ngFor="let cur_idea of (ideas | filterCategory: selectedCategory | highlightClear | filterText: findText | highlightText: findText)">
             <idea-card [idea]="cur_idea"></idea-card>
         </li>
     </ul>

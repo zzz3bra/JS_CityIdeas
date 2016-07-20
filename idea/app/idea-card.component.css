@@ -22,3 +22,7 @@ img.proposition_picture{
     position: relative;
     display:table-cell;
 }
+
+:host >>> .highlightedText {
+    background-color: yellow;
+}
