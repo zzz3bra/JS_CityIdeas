@@ -2,13 +2,13 @@
 <html lang="ru">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Идейки для котейки</title>
-    <link rel="stylesheet" href="css/index.css" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Идейки для котейки</title>
+	<link rel="stylesheet" href="css/index.css" />
 
-    <script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
-    <script>
+	<script src="https://www.gstatic.com/firebasejs/3.1.0/firebase.js"></script>
+	<script>
   // Initialize Firebase
  var config = {
     apiKey: "AIzaSyCC0bt7IUw_nMqC4C2uPT4OXkbqoKGc8s8",
@@ -19,23 +19,26 @@
   firebase.initializeApp(config);
 </script>
 
-    <!-- Polyfill(s) for older browsers -->
-    <script src="node_modules/core-js/client/shim.min.js"></script>
+	<!-- Polyfill(s) for older browsers -->
+	<script src="node_modules/core-js/client/shim.min.js"></script>
 
-    <script src="node_modules/zone.js/dist/zone.js"></script>
-    <script src="node_modules/reflect-metadata/Reflect.js"></script>
-    <script src="node_modules/systemjs/dist/system.src.js"></script>
+	<script src="node_modules/zone.js/dist/zone.js"></script>
+	<script src="node_modules/reflect-metadata/Reflect.js"></script>
+	<script src="node_modules/systemjs/dist/system.src.js"></script>
 
-    <script src="systemjs.config.js"></script>
-    <script>
+	<script src="systemjs.config.js"></script>
+	<script>
       System.import('app').catch(function(err){ console.error(err); });
     </script>
 </head>
 
 <body>
-    <div class="wrap">
-        <app>Загрузка данных...</app>
-    </div>
+	<div class="wrap">
+		<app>Загрузка данных...</app>
+	</div>
+	<script id="__bs_script__">//<![CDATA[
+    document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.17.2'><\/script>".replace("HOST", location.hostname));
+//]]></script>
 </body>
 
 </html>
