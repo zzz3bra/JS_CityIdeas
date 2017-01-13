@@ -1,7 +1,7 @@
-import { Component,Input, OnInit, OnChanges, SimpleChange } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { Idea } from './idea';
-import { IdeaService} from './idea.service';
-import { CategoriesService} from './categories.service';
+import { IdeaService } from './idea.service';
+import { CategoriesService } from './categories.service';
 
 @Component({
     moduleId: module.id,
@@ -13,6 +13,7 @@ import { CategoriesService} from './categories.service';
 export class AppComponent implements OnInit {
     ideas: Idea[];
     categories: string[];
+    map: any;
     @Input()
     findText = '';
     selectedCategory = '';

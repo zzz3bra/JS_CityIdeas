@@ -5,11 +5,11 @@ import { Idea } from './idea';
 export class FilterTextPipe implements PipeTransform {
     transform(allIdeas: Idea[], filter: string): Idea[] {
         if (allIdeas == null) {
-            return allIdeas;
+            return null;
         }
-        if (filter != '') {
+        if (filter !== '') {
             return allIdeas.filter(idea => idea.content.toLocaleUpperCase().indexOf(filter.toLocaleUpperCase()) > -1 || idea.header.toLocaleUpperCase().indexOf(filter.toLocaleUpperCase()) > -1);
         }
-        return allIdeas;
+        return allIdeas.filter(idea => true);
     }
 }

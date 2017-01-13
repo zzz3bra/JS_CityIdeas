@@ -20,13 +20,13 @@ export class HighlightTextPipe implements PipeTransform {
             pos = foundPos + highlightingConstants.rightSelectLength + highlightingConstants.leftSelectLength + 1;
         }
     }
-    transform(ideas: Idea[], pattern: string): Idea[] {
+    transform(ideas: Idea[], text: string): Idea[] {
         if (ideas == null) {
             return ideas;
         }
         let cur_ideas: Idea[] = ideas.filter(idea => true);
-        if (pattern != "") {
-            cur_ideas.forEach(idea => this.highlight(idea, pattern));
+        if (text != "") {
+            cur_ideas.forEach(idea => this.highlight(idea, text));
         }
         return cur_ideas;
     }

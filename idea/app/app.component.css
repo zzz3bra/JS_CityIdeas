@@ -6,12 +6,12 @@ header img {
     background: lightskyblue;
     line-height: 50px;
     font-family: sans-serif;
-    font-size: 8pt; 
+    font-size: 8pt;
     overflow: hidden;
 }
 
 .right_bar {
-    float:right;
+    float: right;
 }
 
 .search {
@@ -20,6 +20,7 @@ header img {
     overflow: hidden;
     min-height: 50px;
 }
+
 .right_bar li {
     margin-left: 10px;
     float: right;
@@ -34,18 +35,16 @@ header img {
 .navbar a:hover {
     text-decoration: underline;
 }
-.navbar ul{
-        list-style-type: none;
+
+.navbar ul {
+    list-style-type: none;
 }
 
-.map {
+#map {
     width: 40%;
+    height: 100%;
     float: right;
-    min-width: 200px;
-}
-
-.map img {
-    width: 100%;
+    min-height: 400px;
 }
 
 .propositions {

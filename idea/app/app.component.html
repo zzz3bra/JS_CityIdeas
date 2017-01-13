@@ -24,12 +24,12 @@
 
 <div class="propositions">
     <ul>
-        <li *ngFor="let cur_idea of (ideas | filterCategory: selectedCategory | highlightClear | filterText: findText | highlightText: findText)">
+        <li *ngFor="let cur_idea of (ideas | filterCategory: selectedCategory | highlightClear: findText | filterText: findText | highlightText: findText)">
             <idea-card [idea]="cur_idea"></idea-card>
         </li>
     </ul>
 </div>
 
-<div class="map">
-    <img src="img/map.png" alt="Карта с маркерами предложений">
+<div id="map">
+
 </div>

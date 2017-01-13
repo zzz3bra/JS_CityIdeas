@@ -5,10 +5,13 @@ import { Idea } from './idea';
 export class FilterCategoryPipe implements PipeTransform {
 
     transform(allIdeas: Idea[], filter: string): Idea[] {
-        if (filter == '') {
-            return allIdeas;
-        } else {
-            return allIdeas.filter(idea => idea.category.toLocaleUpperCase() == filter.toLocaleUpperCase())
+        if (allIdeas == null) {
+            return null;
         }
+        if (filter !== '') {
+            return allIdeas.filter(idea => idea.category.toLocaleUpperCase() == filter.toLocaleUpperCase());
+
+        }
+        return allIdeas;
     }
 }

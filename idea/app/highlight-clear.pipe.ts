@@ -4,13 +4,13 @@ import highlightingConstants = require("./highlighting-constants");
 
 @Pipe({ name: 'highlightClear' })
 export class HighlightClearPipe implements PipeTransform {
-    clearHighlight(idea: Idea): void {
+    private clearHighlight(idea: Idea): void {
         if (idea != null) {
             idea.content = idea.content.replace(highlightingConstants.leftSelectClear, "").replace(highlightingConstants.rightSelectClear, "");
             idea.header = idea.header.replace(highlightingConstants.leftSelectClear, "").replace(highlightingConstants.rightSelectClear, "");
         }
     }
-    transform(ideas: Idea[]): Idea[] {
+    transform(ideas: Idea[], text: string): Idea[] {
         if (ideas == null) {
             return ideas;
         }
