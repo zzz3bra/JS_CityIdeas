@@ -1,0 +1,9 @@
+{
+  "groups": {
+    "default": {
+      "packages": [
+        "idea/package.json"
+      ]
+    }
+  }
+}
